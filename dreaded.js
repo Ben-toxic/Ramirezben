@@ -48,8 +48,8 @@ const Heroku = require("heroku-client");
 const gptdm = process.env.GPT_INBOX || 'TRUE';
     const cmd = body.startsWith(prefix);
 //const autobio = process.env.AUTOBIO || 'TRUE';
-const botname = process.env.BOTNAME || 'DREX AI';
-const antibot = process.env.ANTIBOT || 'FALSE';
+const botname = process.env.BOTNAME || '𝞑𝞢𝞜 𝞑𝞗𝙏 𝞓𝞘';
+const antibot = process.env.ANTIBOT || 'TRUE';
   
     const command = body.replace(prefix, "").trim().split(/ +/).shift().toLowerCase();
     const args = body.trim().split(/ +/).slice(1);
@@ -79,16 +79,16 @@ const antibot = process.env.ANTIBOT || 'FALSE';
     };
     const mime = (quoted.msg || quoted).mimetype || "";
             const qmsg = (quoted.msg || quoted);
-    const author = process.env.STICKER_AUTHOR ||'𝐃𝐑𝐄𝐗_𝐀𝐈';
-    const packname = process.env.STICKER_PACKNAME || 'Drex';
-const dev = process.env.DEV || '254102074064'
+    const author = process.env.STICKER_AUTHOR ||'𝞑𝞢𝞜 𝞑𝞗𝙏 𝞓𝞘';
+    const packname = process.env.STICKER_PACKNAME || 'BEN';
+const dev = process.env.DEV || '254719485000'
 const menu = process.env.MENU_TYPE || 'VIDEO';
  const DevDreaded = dev.split(",");
-    const badwordkick = process.env.BAD_WORD_KICK || 'FALSE';
+    const badwordkick = process.env.BAD_WORD_KICK || 'TRUE';
    const bad = process.env.BAD_WORD || 'fuck';
     const autoread = process.env.AUTOREAD || 'TRUE';
     const badword = bad.split(",");
-    const thum = fs.readFileSync ('./𝐃𝐑𝐄𝐗_𝐀𝐈.jpg');	  
+    const thum = fs.readFileSync ('./𝞑𝞢𝞜 𝞑𝞗𝙏 𝞓𝞘.jpg');	  
     const Owner = DevDreaded.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender);
     const viewOnceMessage = args.join(" ");
     const fcontact = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { 'contactMessage': { 'displayName': `𝐃𝐑𝐄𝐗 𝐁𝐎𝐓`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;DrexBot,;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': { url: 'https://telegra.ph/file/00c44dbca471eff754425.png' }}}}
@@ -104,7 +104,7 @@ const admin = process.env.ADMIN_MSG || '𝐇𝐮𝐡!\n𝐀𝐝𝐦𝐢𝐦𝐬 
     const botAdmin = process.env.BOT_ADMIN_MSG || '𝐈𝐦 𝐧𝐨𝐭 𝐚𝐧 𝐚𝐝𝐦𝐢𝐧 𝐛*𝐭𝐜𝐡'
     const NotOwner = process.env.NOT_OWNER_MSG || '𝐎𝐰𝐧𝐞𝐫 𝐨𝐧𝐥𝐲 🗿';
 const wapresence = process.env.WA_PRESENCE || 'recording';
-const antilink = process.env.ANTILINK || 'FALSE';
+const antilink = process.env.ANTILINK || 'TRUE';
 const antilinkall = process.env.ANTILINK_ALL || 'TRUE';
 
 const runtime = function (seconds) { 
@@ -232,13 +232,13 @@ if (budy.startsWith('>')) {
 
 	   async function loady () {
 var lod = [
-"i am drex_ai",
-"cloned by drex mose",
+"i am dr ben bot",
+"cloned by dr ben",
 "follow the below steps to deploy me",
 "Contact owner after deploying",
 	"𝐓𝐡𝐚𝐧𝐤 𝐘𝐨𝐮 𝐅𝐨𝐫 𝐖𝐚𝐢𝐭𝐢𝐧𝐠 😁 "
 ]
-let { key } = await client.sendMessage(from, {text: '𝐈 𝐚𝐦 𝐃𝐫𝐞𝐱_𝐚𝐢'})
+let { key } = await client.sendMessage(from, {text: '𝐈 𝐚𝐦 dr_ben_𝐚𝐢'})
 
 for (let i = 0; i < lod.length; i++) {
 await client.sendMessage(from, {text: lod[i], edit: key });
@@ -249,12 +249,12 @@ await client.sendMessage(from, {text: lod[i], edit: key });
 	   async function load () {
 var lod = [
 "i am drex_ai",
-"cloned by drex mose",
+"cloned by dr ben",
 "have fun with the bot",
 "type .sc to access my source code",
 	"𝐓𝐡𝐚𝐧𝐤 𝐘𝐨𝐮 𝐅𝐨𝐫 𝐖𝐚𝐢𝐭𝐢𝐧𝐠 😁 "
 ]
-let { key } = await client.sendMessage(from, {text: '𝐈 𝐚𝐦 𝐃𝐫𝐞𝐱_𝐚𝐢'})
+let { key } = await client.sendMessage(from, {text: '𝐈 𝐚𝐦 𝞑𝞢𝞜 𝞑𝞗𝙏 𝞓𝞘'})
 
 for (let i = 0; i < lod.length; i++) {
 await client.sendMessage(from, {text: lod[i], edit: key });
@@ -265,10 +265,10 @@ await client.sendMessage(from, {text: lod[i], edit: key });
 var lod = [
 "⭓",
 "⬬",	
-	"𝙿𝙸𝙽𝙶𝙸𝙽𝙶 ◍ ◉ ⭗ "
+	"𝞑𝞢𝞜 𝞑𝞗𝙏 𝞓𝞘 PINGING ◍ ◉ ⭗ "
 	
 ]
-let { key } = await client.sendMessage(from, {text: '⭓𝐏𝐨𝐧𝐠'})
+let { key } = await client.sendMessage(from, {text: '⭓𝞑𝞢𝞜 PONG DONE'})
 
 for (let i = 0; i < lod.length; i++) {
 await client.sendMessage(from, {text: lod[i], edit: key });
@@ -281,9 +281,9 @@ var lod = [
 "😎",
 "🤬",
         "🗿",	
-"⭓𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐛𝐲 𝐝𝐫𝐞𝐱! 😬"
+"⭓𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐛𝐲 𝞑𝞢𝞜! 😬"
 ]
-let { key } = await client.sendMessage(from, {text: '𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐛𝐲 𝐝𝐫𝐞𝐱! 😬...'})
+let { key } = await client.sendMessage(from, {text: '𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐛𝐲 𝞑𝞢𝞜! 😬...'})
 
 for (let i = 0; i < lod.length; i++) {
 await client.sendMessage(from, {text: lod[i], edit: key });
@@ -409,16 +409,16 @@ case "help":
 
 		      await loading ()
 
-let cap = `╭════〘 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 〙═⊷⏣
+let cap = `╭════〘 𝞑𝞢𝞜 𝞑𝞗𝙏 𝞓𝞘 〙═⊷⏣
 ┃⭓╭──────────────┉◕
 ┃⬬│ 𝗢𝘄𝗻𝗲𝗿 :𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼
 ┃⭓│ 𝗨𝘀𝗲𝗿 : ${m.pushName}︎︎
 ┃⬬│ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 :${runtime(process.uptime())}
-┃⭓│ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : 𝐋𝐢𝐧𝐮𝐱
+┃⭓│ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : 𝞑𝞢𝞜 𝞑𝞗𝙏 PLATFORM
 ┃⬬│ 𝗥𝗮𝗺 : 64GB of 256GB
 ┃⭓│ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: 𝐯𝟏.𝟎.𝟏
 ┃⬬│ 𝗣𝗿𝗲𝗳𝗶𝘅 : ${prefix}
-┃⭓│ 𝗦𝗽𝗲𝗲𝗱 :  *${dreadedspeed.toFixed(4)}* 𝐌𝐬
+┃⭓│ 𝗦𝗽𝗲𝗲𝗱 :  *${benspeed.toFixed(4)}* 𝐌𝐬
 ┃⬬│
 ┃⭓│▎▍▌▌▉▏▎▌▉▐▏▌
 ┃⬬│▎▍▌▌▉▏▎▌▉▐▏▌
@@ -512,7 +512,7 @@ let cap = `╭════〘 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 〙═⊷⏣
 ┃⬬│${prefix}𝐈𝐧𝐛𝐨𝐱.
 ┃⬬│${prefix}𝐐𝐮𝐨𝐭𝐞𝐥𝐲.
 ┃⬬│${prefix}𝐒𝐜𝐫𝐢𝐩𝐭.
-┃⬬│${prefix}𝐌𝐨𝐬𝐞.
+┃⬬│${prefix}Ben.
 ┃⬬│${prefix}𝐒𝐜.
 ┃⬬│${prefix}𝐒𝐲𝐬𝐭𝐞𝐦.
 ┃⬬│${prefix}𝐂𝐫𝐞𝐝𝐢𝐭𝐬.
@@ -550,7 +550,7 @@ let cap = `╭════〘 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 〙═⊷⏣
 ┃⭓│${prefix}𝐑𝐞𝐯𝐨𝐤𝐞.
 ┃⭓│
 ┃⭓╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅⏣
-┃➠    ▒▓𝐌𝐚𝐝𝐞 𝐁𝐲 ✞⃟❐͜͡𝕯Я𝚺✘ ⃟ۣቾ ᭄ ࣩࣧࣧ▓▒ 
+┃➠    ▒Made 𝐁𝐲 𝞑𝞢𝞜 𝞑𝞗𝙏 𝞓𝞘 ࣩࣧࣧ▓▒ 
 ╰════════════════⊷⏣`;
 
 if (menu === 'VIDEO') {
@@ -575,7 +575,7 @@ client.sendMessage(m.chat, {
                                 showAdAttribution: true,
                                 title: `𝐃𝐑𝐄𝐗_𝐀𝐈`,
                                 body: `${runtime(process.uptime())}`,
-                                thumbnail: fs.readFileSync('./𝐃𝐑𝐄𝐗_𝐀𝐈.jpg'),
+                                thumbnail: fs.readFileSync('./𝞑𝞢𝞜 𝞑𝞗𝙏 𝞓𝞘.jpg'),
                                 sourceUrl: 'https://wa.me/254102074064?text=ʜᴇʟʟᴏ+𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏+Nihostie+Bot+Mkuu+🥲',
                                 mediaType: 1,
                                 renderLargerThumbnail: true
@@ -592,7 +592,7 @@ break;
 case "p": case "t": {
 	await loadings ()
 for (let i = 0; i < 5; i++) {
-  m.reply(`⭓𝐏𝐨𝐧𝐠\n *${dreadedspeed.toFixed(4)}* 𝐌𝐬`);
+  m.reply(`⭓𝞑𝞢𝞜 𝞑𝞗𝙏 𝞓𝞘 PONG DONE\n *${dreadedspeed.toFixed(4)}* 𝐌𝐬`);
   }
 } 
 break;
@@ -642,7 +642,7 @@ case 'play2': {
         from, {
           audio: fs.readFileSync(`./${randomName}`),
           mimetype: "audio/mpeg",
-          caption: "𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐃𝐑𝐄𝐗"
+          caption: "𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝞑𝞢𝞜"
         }, {
           quoted: fcontact
         }
@@ -813,7 +813,7 @@ const rel = await quote(xf, pushname, pppuser)
                 
                 client.sendImageAsSticker(m.chat, rel.result, m, {
                     packname: pushname,
-                    author: `©𝐝𝐫𝐞𝐱_𝐦𝐨𝐬𝐞⸙`
+                    author: `©dr_ben⸙`
                 })
 
 } catch (errr) { 
@@ -1263,7 +1263,7 @@ try {
  if (users  == client.decodeJid(client.user.id)) throw 'Bot cannot remove itself 😡';
  if (users == Owner) { m.reply('Its owner number')}; 
                  await client.groupParticipantsUpdate(m.chat, users, 'remove'); 
-await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐛𝐲 𝐝𝐫𝐞𝐱_𝐚𝐢😬'); 
+await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐛𝐲 𝞑𝞢𝞜 𝞑𝞗𝙏 𝞓𝞘😬'); 
 } catch (errr) { 
  await reply("𝐇𝐮𝐡!\n 𝐎𝐧𝐞 𝐨𝐟 𝐮𝐬 𝐢𝐬 𝐧𝐨𝐭 𝐚𝐧 𝐚𝐝𝐦𝐢𝐧 𝐡𝐞𝐫𝐞🌚")}
 
@@ -1277,7 +1277,7 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
  case 'sc': case 'script': case 'repo':
 
  client.sendMessage(m.chat, { image: { url: `https://telegra.ph/file/53077a0e00d6bda32a46b.jpg` }, caption: 
-`👋🏻 Hi *${pushname}*,You can deploy 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 using the GitHub link below🗿\n\nFork and give us a star✨.\n\n https://github.com/drexmose/drex-ai\n\nEnjoy and have fun with the bot🗿...\n\nUse the link below to pair 𝐃𝐑𝐄𝐗_𝐀𝐈 without scanning any qr code\n\n [https://replit.com/@darkintent120/Pairing-drex9]\n\nType ${prefix}Tutorial and follow the steps if you dont know how to deploy the bot\n\n           Made on Earth by 𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼` });
+`👋🏻 Hi *${pushname}*,You can deploy 𝞑𝞢𝞜 𝞑𝞗𝙏 𝞓𝞘 using the GitHub link below🗿\n\nFork and give us a star✨.\n\n https://github.com/ben-toxic/Ramirezben\n\nEnjoy and have fun with the bot🗿...\n\nUse the link below to pair 𝞑𝞢𝞜 𝞑𝞗𝙏 𝞓𝞘 without scanning any qr code\n\n [https://replit.com/@darkintent120/Pairing-drex9]\n\nType ${prefix}Tutorial and follow the steps if you dont know how to deploy the bot\n\n           Made on Earth by 𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼` });
 
    break;
                                                   
@@ -1702,7 +1702,7 @@ break
                         document: fs.readFileSync(`./${randomName}`),
                         mimetype: "audio/mpeg",
                         fileName: titleYt + ".mp3",
-			caption: "𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓®",    
+			caption: "𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝞑𝞢𝞜 𝞑𝞗𝙏 𝞓𝞘®",    
                     }, {
                         quoted: fcontact 
                     }
@@ -1787,7 +1787,7 @@ case 'yta': {
                         document: fs.readFileSync(`./${randomName}`),
                         mimetype: "audio/mpeg",
                         fileName: titleYt + ".mp3",
-			caption:"𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓®",
+			caption:"𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝞑𝞢𝞜 𝞑𝞗𝙏 ®",
                     }, {
                         quoted: fcontact
                     }
@@ -1948,10 +1948,10 @@ m.reply (`⭓𝐏𝐨𝐧𝐠\n *${dreadedspeed.toFixed(4)}* 𝐌𝐬`);
                     contextInfo: {
                         externalAdReply: {
                             showAdAttribution: true,
-                            title: '𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 𝚳𝐃',
-                            body: 'https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v',
-                            thumbnailUrl: 'https://telegra.ph/file/7cf3c490a482f0ae79e02.jpg',
-                            sourceUrl: 'https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v',
+                            title: '𝞑𝞢𝞜 𝞑𝞗𝙏 𝞓𝞘 𝚳𝐃',
+                            body: 'https://wa.me/254719485000,
+                            thumbnailUrl: 'https://telegra.ph/file/4b41c157e88bbf762fd33.jpg',
+                            sourceUrl: 'https://chat.whatsapp.com/JTR4k7tiJfXFlz0yQyjCPI',
                             mediaType: 1,
                             renderLargerThumbnail: true
                         }
